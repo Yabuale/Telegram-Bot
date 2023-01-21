@@ -1,2 +1,2 @@
 # Telegram-Bot
-A simple telegram bot with java
+A simple telegram echo bot with java
