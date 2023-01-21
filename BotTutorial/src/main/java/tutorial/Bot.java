@@ -37,17 +37,17 @@ public class Bot extends TelegramLongPollingBot {
             sendText(id, "Hello "+user.getFirstName()+" "+msg.getText() + " right back at you \uD83D\uDE09 contact me @yabu_yb");
         }
     }
-    //teth
+
 
 
     public void sendText(Long who, String what){
         SendMessage sm = SendMessage.builder()
-                .chatId(who.toString()) //Who are we sending a message to
-                .text(what).build();    //Message content
+                .chatId(who.toString()) 
+                .text(what).build();    
         try {
-            execute(sm);                        //Actually sending the message
+            execute(sm);                        
         } catch (TelegramApiException e) {
-            throw new RuntimeException(e);      //Any error will be printed here
+            throw new RuntimeException(e);      
         }
     }
 }
